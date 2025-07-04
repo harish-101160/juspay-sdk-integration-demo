@@ -1,9 +1,9 @@
 curl --location --request POST 'https://api.juspay.in/orders' \
 --header 'version: 2018-10-25' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'x-merchantid: merchant_id'\
---header 'Authorization: Basic QTA0QT*******ODg1Og==' \
---data-urlencode 'order_id=14183944763' \
+--header 'x-merchantid: <merchant_id>'\
+--header 'Authorization: < Base 64 Api Key >' \
+--data-urlencode 'order_id=<order_id>' \
 --data-urlencode 'amount=100.00' \
 --data-urlencode 'currency=INR' \
 --data-urlencode 'customer_id=guest_user_101' \
@@ -37,6 +37,6 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'metadata.PAYTM:PROMO_CAMP_ID=xyz' \
 --data-urlencode 'metadata.PAYTM:CUST_ID=1234' \
 --data-urlencode 'metadata.PAYU:offer_key=1234' \
---data-urlencode 'metadata.PAYU:gateway_reference_id=bus' \
+--data-urlencode 'metadata.PAYU:gateway_reference_id=<Gateway Reference Id>' \
 --data-urlencode 'options.get_client_auth_token=true' \
 --data-urlencode 'metadata.subvention_amount=90'
